@@ -178,3 +178,64 @@ OSI Buckets
 **Top 3** 
 **Middle**
 **Bottom #** 
+
+# Metasploitable 
+- Metasploitable is a vulnerable VM developed by Rapid7 
+- This VM is a .vmdk file that is trickier to install vs .ova files like the Kali VM previously installed
+
+**!!! Make sure you have all VM's are in internal network where other computers cannot communicate with other computers on network only local host !!!**
+
+## IP addresses 
+
+ex IP: 
+  inet 192.168.56.101/24
+
+  /24 means:
+
+    The first 24 bits of the IP address are the network part
+
+    The remaining 8 bits are the host part
+
+  You can interpret it as:
+
+    Your IP: 192.168.56.101
+
+    Your network: 192.168.56.0
+
+    Your subnet mask: 255.255.255.0
+
+    Valid host range: 192.168.56.1 → 192.168.56.254
+
+## Network Transit Bytes 
+
+When creating a socket
+
+    A socket is a door into a network. The application is where the API lives and the transit layer is where the TCP client and server is doing the work. 
+
+you need to send data as bytes because that's how data is sent in a network. 
+
+### Bytes in Python 
+
+string_name.encode()
+
+    - converts string to byte
+    - specify the encoding if needed (default is UTF-8)
+
+(b'hello world')
+
+    - converts string to byte
+
+bytes_name.decode()
+
+    - converts Bytes back into a String
+  
+**Visual**
+
+      [ APPLICATION ]                [ NETWORK / FILE ]
+      
+      "Hello" (str)  ──[ .encode() ]──>  b'Hello' (bytes)
+                                           ↓
+                                      (Sent over socket)
+                                           ↓
+      "Hello" (str)  <──[ .decode() ]──  b'Hello' (bytes)
+

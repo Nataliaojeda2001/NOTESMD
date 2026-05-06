@@ -40,6 +40,9 @@ class Vacation:
         print(f"\n{self.organizer_name} the total cost to travel to {self.destination} is ${total_price} for all {self.group_size} people.\nThe price per person is ${per_person}.")
         return
 
+newVacation2 = Vacation()
+
+
 
 newVacation = Vacation()
 newVacation.whoIsOrganizer()

@@ -1,9 +1,10 @@
 [[TOC]]
 
 
-Note:
+**Note:**
 
-Extensions needed
+<details>
+<summary>Extensions needed</summary>
 
 Markdown All in One:	Adds keyboard shortcuts, TOC generator, preview, etc.
 Markdown Preview Enhanced:	Beautiful live preview with diagrams, math, and export to PDF/HTML
@@ -14,6 +15,14 @@ Draw.io: Integration (optional)	To embed visual diagrams directly
 Todo Tree:	Track TODO: tags across notes
 Material Icon Theme:	Visual folder/file clarity
 
-Option: Side-by-side editing
+</details>
+
+
+---
+
+**Options:**
+
+Side-by-side editing
 
 Press Ctrl + K V (hold Ctrl, then press K, release both, then press V)
+

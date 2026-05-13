@@ -25,7 +25,7 @@ def main():
     '''
     print(f'[*] Listening on {IP}: {PORT}')
           
-    # isn't this true all the time, is it because a server should be running cpntinously?
+    # isn't this true all the time, is it because a server should be running continously?
     while True:
         # receive a client socket object, receive the connection info in address variable
         client, address = server.accept()

@@ -14,7 +14,7 @@ type(ip_addr)
 
 #calling nmapScanner object's method scan 
 nmapScanner.scan(ip_addr, "1-1024")
-print(nmapScanner.scanifo())
+print(nmapScanner.scaninfo())
 
 # where is this list updated? 
 for host in nmapScanner.all_hosts():
